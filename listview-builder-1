@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+class homepage extends StatelessWidget {
+  homepage({Key? key}) : super(key: key);
+  final moulvibazarupozila = [
+    "moulvibazar sadar",
+    "JURI",
+    "KULAUARA",
+    "CHADNIGHAT",
+    "SOBONDOR",
+    "AMTAIL",
+    "moulvibazar sadar",
+    "JURI",
+    "KULAUARA",
+    "CHADNIGHAT",
+    "SOBONDOR",
+    "AMTAIL"
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("listview"),
+      ),
+      body: ListView.builder(
+        itemCount: moulvibazarupozila.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(moulvibazarupozila[index]),
+          );
+        },
+      ),
+    );
+  }
+}
